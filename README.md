@@ -57,6 +57,13 @@ Agora vamos criar outro diretório para separar os certificados de cliente
  mkdir C:\Certs\Clients
 ```
 
+Se o $rootCert não estiver disponível (caso a janela do PowerShell tenha sido fechada) utilize o seguinte comando para obter o certificado digital.
+É necessário trocar {TumPrint} pela Impressão Digital do Certificado Digital da Autoridade Certificadora.
+
+```powershell
+$rootcert = ( Get-ChildItem -Path cert:\CurrentUser\My\{TumbPrint} )
+```
+
 Vamos digitar o seguinte comando para criar o certificado digital de cliente
 
 ```powershell
@@ -79,12 +86,6 @@ Export-PfxCertificate
 Export-Certificate 
   -Cert $mycert 
   -FilePath "C:\Certs\Clients\Diogoschimm-Clinet.crt"
-```
-Se o $rootCert não estiver disponível (caso a janela do PowerShell tenha sido fechada) utilize o seguinte comando para obter o certificado digital.
-É necessário trocar {TumPrint} pela Impressão Digital do Certificado Digital da Autoridade Certificadora.
-
-```powershell
-$rootcert = ( Get-ChildItem -Path cert:\CurrentUser\My\{TumbPrint} )
 ```
 
 
