@@ -16,6 +16,8 @@ Arquivo contendo duas chaves criptograficas (chave publica e chave privada) é u
 **Cadeia de Confiança**:
 Os sistemas operacionais utilizam o conceito de cadeia de confiança (caminho da certificação) para determinar se os certificados de cliente são válidos ou não, para isso o certificado digital da autoridade certificado deve estar instalado no windows, se ele estiver instalado no sistema operacional todos os certificados digitais que estão abaixo daquela autoridade certificadora serão certificados válidos.
 
+![image](https://user-images.githubusercontent.com/30643035/85464708-f38b1180-b575-11ea-91a0-f31ca2f46b52.png)
+
 **Repositórios de Certificados**:
 Windows possui diretórios especiais para armazenar os certificados digitais instalados conforme imagem abaixo.
 
