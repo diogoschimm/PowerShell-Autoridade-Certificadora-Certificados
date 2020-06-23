@@ -118,6 +118,8 @@ O repositório para instalar a Autoridade Certificadora é (Autoridades de Certi
 
 O Certificado Digital do Cliente deve ser instalado somente no computador do Cliente
 
+![image](https://user-images.githubusercontent.com/30643035/85476183-b62e8000-b585-11ea-9674-04aa0c86d7f3.png)
+
 
 
 
