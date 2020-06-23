@@ -28,8 +28,11 @@ Criando o Certificado Digital para a Autoridade Certificadora
 
 ```powershell
 
-$rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "Diogoschimm-CA" 
--TextExtension @("2.5.29.19={text}CA=true") -NotAfter (Get-Date).AddYears(10) -KeyUsage CertSign,CrlSign,DigitalSignature
+$rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My 
+  -DnsName "Diogoschimm-CA" 
+  -TextExtension @("2.5.29.19={text}CA=true") 
+  -NotAfter (Get-Date).AddYears(10) 
+  -KeyUsage CertSign,CrlSign,DigitalSignature
 
 $rootcertPassword = ConvertTo-SecureString -String "1234567890" -Force -AsPlainText
 Export-PfxCertificate -Cert $rootcert -FilePath 'C:\Certificados\Diogoschimm-CA.pfx' -Password $rootcertPassword
