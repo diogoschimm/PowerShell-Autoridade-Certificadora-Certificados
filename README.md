@@ -25,7 +25,7 @@ Windows possui diretórios especiais para armazenar os certificados digitais ins
 
 Para visualizar os certificados digitais instalados em seu computador digite na busca do windows ("Gerenciar Certificados de computador" e "Gerenciar Certificados de usuário")
 
-
+![image](https://user-images.githubusercontent.com/30643035/85465407-c2f7a780-b576-11ea-8872-a366f2978784.png)
 
 
 ## Comandos
