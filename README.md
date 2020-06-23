@@ -11,7 +11,10 @@ Não é necessário conter a chave privada na máquina de cliente e nem na máqu
 **Certificado Digital**:
 Arquivo contendo duas chaves criptograficas (chave publica e chave privada) é utilizado para garantir Autenticidade de Individuos ou Computadores.
 
+![image](https://user-images.githubusercontent.com/30643035/85464343-84152200-b575-11ea-9470-8a282487f3d7.png)
+
 **Cadeia de Confiança**:
+Os sistemas operacionais utilizam o conceito de cadeia de confiança (caminho da certificação) para determinar se os certificados de cliente são válidos ou não, para isso o certificado digital da autoridade certificado deve estar instalado no windows, se ele estiver instalado no sistema operacional todos os certificados digitais que estão abaixo daquela autoridade certificadora serão certificados válidos.
 
 **Repositórios de Certificados**:
 Windows possui diretórios especiais para armazenar os certificados digitais instalados conforme imagem abaixo.
