@@ -100,7 +100,7 @@ Export-PfxCertificate
 
 Export-Certificate 
   -Cert $mycert 
-  -FilePath "C:\Certs\Clients\Diogoschimm-Clinet.crt"
+  -FilePath "C:\Certs\Clients\Diogoschimm-Client.crt"
 ```
 
 ## Instalando os certificados digitais 
