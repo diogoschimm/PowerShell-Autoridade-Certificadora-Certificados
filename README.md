@@ -50,7 +50,39 @@ Export-Certificate
 
 ```
 
-Criando o Certificado Digital para o Cliente, esse certificado será assinado pelo certificado digital da nossa Autoridade Certificadora, com isso a cadeia de certificação ficará "Diogoschimm-CA" >> "Nosso Certificado Cliente"
+Criando o Certificado Digital para o Cliente, esse certificado será assinado pelo certificado digital da nossa Autoridade Certificadora, com isso a cadeia de certificação ficará "Diogoschimm-CA" >> "Nosso Certificado Cliente"  
+Agora vamos criar outro diretório para separar os certificados de cliente  
+
+```powershell
+ mkdir C:\Certs\Clients
+```
+
+Vamos digitar o seguinte comando para criar o certificado digital de cliente
+
+```powershell
+$mycert = New-SelfSignedCertificate 
+  -certstorelocation cert:\CurrentUser\my 
+  -dnsname "DIOGOSCHIMM CLIENTE:CPF" 
+  -Signer $rootcert 
+  -NotAfter (Get-Date).AddYears(5) 
+  -FriendlyName "DIOGOSCHIMM CLIENTE:CPF"
+  
+$mypwd = ConvertTo-SecureString 
+  -String "1234567890" 
+  -Force -AsPlainText
+  
+Export-PfxCertificate 
+  -Cert $mycert 
+  -FilePath "C:\Certs\Clients\DIOGOSCHIMM-CLIENTE-CPF.pfx" 
+  -Password $mypwd
+
+Export-Certificate 
+  -Cert $mycert 
+  -FilePath "C:\Certs\Clients\DIOGOSCHIMM-CLIENTE-CPF.crt"
+```
+
+
+
 
 
 
