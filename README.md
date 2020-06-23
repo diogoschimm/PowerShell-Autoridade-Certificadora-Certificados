@@ -35,7 +35,11 @@ $rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My
   -KeyUsage CertSign,CrlSign,DigitalSignature
 
 $rootcertPassword = ConvertTo-SecureString -String "1234567890" -Force -AsPlainText
-Export-PfxCertificate -Cert $rootcert -FilePath 'C:\Certificados\Diogoschimm-CA.pfx' -Password $rootcertPassword
+
+Export-PfxCertificate -Cert $rootcert 
+  -FilePath 'C:\Certificados\Diogoschimm-CA.pfx' 
+  -Password $rootcertPassword
+  
 Export-Certificate -Cert $rootcert -FilePath 'C:\Certificados\Diogoschimm-CA.crt'
 
 ```
