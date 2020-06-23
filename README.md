@@ -50,4 +50,7 @@ Export-Certificate
 
 ```
 
+Criando o Certificado Digital para o Cliente, esse certificado será assinado pelo certificado digital da nossa Autoridade Certificadora, com isso a cadeia de certificação ficará "Diogoschimm-CA" >> "Nosso Certificado Cliente"
+
+
 
