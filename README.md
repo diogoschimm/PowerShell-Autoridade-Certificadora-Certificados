@@ -19,9 +19,13 @@ Os sistemas operacionais utilizam o conceito de cadeia de confiança (caminho da
 ![image](https://user-images.githubusercontent.com/30643035/85464708-f38b1180-b575-11ea-91a0-f31ca2f46b52.png)
 
 **Repositórios de Certificados**:
-Windows possui diretórios especiais para armazenar os certificados digitais instalados conforme imagem abaixo.
+Windows possui diretórios especiais para armazenar os certificados digitais instalados, eles não são acessados pelo Windows Explorer conforme imagem abaixo.
 
 ![image](https://user-images.githubusercontent.com/30643035/85464199-5af49180-b575-11ea-9b4e-6c8b797d319d.png)
+
+Para visualizar os certificados digitais instalados em seu computador digite na busca do windows ("Gerenciar Certificados de computador" e "Gerenciar Certificados de usuário")
+
+
 
 
 ## Comandos
