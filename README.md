@@ -5,8 +5,11 @@ Explicação de comandos e conceitos para criação de certificados digitais par
 ## Conceitos:
 
 **Certificado de Autoridade Certificadora**:
+O Certificado Digital da Autoridade Certificadora é um arquivo contendo a Chave Publica e Chave Privada do Certificado que está do Topo da Cadeia de Certificação, ele deve estar instalado tanto no Servidor quando no computador do Cliente, ele que vai garantir a cadeia de confiança entre a máquina Server e a máquina Client.
+Não é necessário conter a chave privada na máquina de cliente e nem na máquina do servidor, a chave privada só é utilizada no momento da assinatura de outros certificados (então deve estar disponível somente na máquina que criar certificados filhos da autoridade certificadora).
 
 **Certificado Digital**:
+Arquivo contendo duas chaves criptograficas (chave publica e chave privada) é utilizado para garantir Autenticidade de Individuos ou Computadores.
 
 **Cadeia de Confiança**:
 
