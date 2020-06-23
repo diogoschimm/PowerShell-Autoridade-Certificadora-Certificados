@@ -79,6 +79,10 @@ Se o $rootCert não estiver disponível (caso a janela do PowerShell tenha sido 
 $rootcert = ( Get-ChildItem -Path cert:\CurrentUser\My\{TumbPrint} )
 ```
 
+A Impressão Digital pode ser obtida no seguinte caminho
+
+![image](https://user-images.githubusercontent.com/30643035/85466488-09013b00-b578-11ea-9601-01e06ce1d88a.png)
+
 Vamos digitar o seguinte comando para criar o certificado digital de cliente
 
 ```powershell
