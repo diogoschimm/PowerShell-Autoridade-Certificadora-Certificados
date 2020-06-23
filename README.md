@@ -14,6 +14,7 @@ Arquivo contendo duas chaves criptograficas (chave publica e chave privada) é u
 **Cadeia de Confiança**:
 
 **Repositórios de Certificados**:
+Windows possui diretórios especiais para armazenar os certificados digitais instalados
 
 
 ## Comandos
