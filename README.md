@@ -107,8 +107,9 @@ Export-Certificate
 
 O Certificado Digital da Autoridade Certificadora deve ser instalado tanto na máquina Cliente quando no Servidor, em ambos os casos não é necessário instalar com a Chave Privada, pois ele não será utilizando para funções criptograficas, ele será utilizado somente na cadeia de confiança entre Cleinte Servidor.
 
-O repositório para instalar a Autoridade Certificadora é:
+O repositório para instalar a Autoridade Certificadora é (Autoridades de Certificação Raiz Confiáveis)
 
+![image](https://user-images.githubusercontent.com/30643035/85466106-8f694d00-b577-11ea-91cd-44f0ec300783.png)
 
 
 O Certificado Digital do Cliente deve ser instalado somente no Cliente
