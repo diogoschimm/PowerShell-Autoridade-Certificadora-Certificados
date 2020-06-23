@@ -80,6 +80,12 @@ Export-Certificate
   -Cert $mycert 
   -FilePath "C:\Certs\Clients\Diogoschimm-Clinet.crt"
 ```
+Se o $rootCert não estiver disponível (caso a janela do PowerShell tenha sido fechada) utilize o seguinte comando para obter o certificado digital.
+É necessário trocar {TumPrint} pela Impressão Digital do Certificado Digital da Autoridade Certificadora.
+
+```powershell
+$rootcert = ( Get-ChildItem -Path cert:\CurrentUser\My\{TumbPrint} )
+```
 
 
 
