@@ -103,7 +103,15 @@ Export-Certificate
   -FilePath "C:\Certs\Clients\Diogoschimm-Clinet.crt"
 ```
 
+## Instalando os certificados digitais 
 
+O Certificado Digital da Autoridade Certificadora deve ser instalado tanto na máquina Cliente quando no Servidor, em ambos os casos não é necessário instalar com a Chave Privada, pois ele não será utilizando para funções criptograficas, ele será utilizado somente na cadeia de confiança entre Cleinte Servidor.
+
+O repositório para instalar a Autoridade Certificadora é:
+
+
+
+O Certificado Digital do Cliente deve ser instalado somente no Cliente
 
 
 
