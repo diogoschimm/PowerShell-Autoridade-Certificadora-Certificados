@@ -62,10 +62,10 @@ Vamos digitar o seguinte comando para criar o certificado digital de cliente
 ```powershell
 $mycert = New-SelfSignedCertificate 
   -certstorelocation cert:\CurrentUser\my 
-  -dnsname "DIOGOSCHIMM CLIENTE:CPF" 
+  -dnsname "Diogoschimm-Client" 
   -Signer $rootcert 
   -NotAfter (Get-Date).AddYears(5) 
-  -FriendlyName "DIOGOSCHIMM CLIENTE:CPF"
+  -FriendlyName "Diogoschimm-Client"
   
 $mypwd = ConvertTo-SecureString 
   -String "1234567890" 
@@ -73,12 +73,12 @@ $mypwd = ConvertTo-SecureString
   
 Export-PfxCertificate 
   -Cert $mycert 
-  -FilePath "C:\Certs\Clients\DIOGOSCHIMM-CLIENTE-CPF.pfx" 
+  -FilePath "C:\Certs\Clients\Diogoschimm-Client.pfx" 
   -Password $mypwd
 
 Export-Certificate 
   -Cert $mycert 
-  -FilePath "C:\Certs\Clients\DIOGOSCHIMM-CLIENTE-CPF.crt"
+  -FilePath "C:\Certs\Clients\Diogoschimm-Clinet.crt"
 ```
 
 
