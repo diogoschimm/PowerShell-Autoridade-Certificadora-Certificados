@@ -73,7 +73,7 @@ Agora vamos criar outro diretório para separar os certificados de cliente
 ```
 
 Se o $rootCert não estiver disponível (caso a janela do PowerShell tenha sido fechada) utilize o seguinte comando para obter o certificado digital.
-É necessário trocar {TumPrint} pela Impressão Digital do Certificado Digital da Autoridade Certificadora.
+É necessário trocar {TumbPrint} pela Impressão Digital do Certificado Digital da Autoridade Certificadora.
 
 ```powershell
 $rootcert = ( Get-ChildItem -Path cert:\CurrentUser\My\{TumbPrint} )
