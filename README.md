@@ -5,7 +5,7 @@ Explicação de comandos e conceitos para criação de certificados digitais par
 ## Conceitos:
 
 **Certificado de Autoridade Certificadora**:
-O Certificado Digital da Autoridade Certificadora é um arquivo contendo a Chave Publica e Chave Privada do Certificado que está do Topo da Cadeia de Certificação, ele deve estar instalado tanto no Servidor quando no computador do Cliente, ele que vai garantir a cadeia de confiança entre a máquina Server e a máquina Client.
+O Certificado Digital da Autoridade Certificadora é um arquivo contendo a Chave Publica e Chave Privada do Certificado que está do Topo da Cadeia de Certificação, ele deve estar instalado tanto no Servidor quanto no computador do Cliente, ele que vai garantir a cadeia de confiança entre a máquina Server e a máquina Client.
 Não é necessário conter a chave privada na máquina de cliente e nem na máquina do servidor, a chave privada só é utilizada no momento da assinatura de outros certificados (então deve estar disponível somente na máquina que criar certificados filhos da autoridade certificadora).
 
 **Certificado Digital**:
@@ -14,7 +14,7 @@ Arquivo contendo duas chaves criptograficas (chave publica e chave privada) é u
 ![image](https://user-images.githubusercontent.com/30643035/85464343-84152200-b575-11ea-9470-8a282487f3d7.png)
 
 **Cadeia de Confiança**:
-Os sistemas operacionais utilizam o conceito de cadeia de confiança (caminho da certificação) para determinar se os certificados de cliente são válidos ou não, para isso o certificado digital da autoridade certificado deve estar instalado no windows, se ele estiver instalado no sistema operacional todos os certificados digitais que estão abaixo daquela autoridade certificadora serão certificados válidos.
+Os sistemas operacionais utilizam o conceito de cadeia de confiança (caminho da certificação) para determinar se os certificados de cliente são válidos ou não, para isso o certificado digital da autoridade certificadora deve estar instalado no windows, se ele estiver instalado no sistema operacional todos os certificados digitais que estão abaixo daquela autoridade certificadora serão certificados válidos.
 
 ![image](https://user-images.githubusercontent.com/30643035/85464708-f38b1180-b575-11ea-91a0-f31ca2f46b52.png)
 
@@ -73,7 +73,7 @@ Agora vamos criar outro diretório para separar os certificados de cliente
 ```
 
 Se o $rootCert não estiver disponível (caso a janela do PowerShell tenha sido fechada) utilize o seguinte comando para obter o certificado digital.
-É necessário trocar {TumPrint} pela Impressão Digital do Certificado Digital da Autoridade Certificadora.
+É necessário trocar {TumbPrint} pela Impressão Digital do Certificado Digital da Autoridade Certificadora.
 
 ```powershell
 $rootcert = ( Get-ChildItem -Path cert:\CurrentUser\My\{TumbPrint} )
